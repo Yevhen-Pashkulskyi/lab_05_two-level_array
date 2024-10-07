@@ -1,6 +1,8 @@
 #include <stdlib.h>
 // #include "../controller/Func.h"
-
+/**
+ * Функція сумує строки масиву
+ */
 int *sum_row(int **arr, int row, int col) {
     int *result = malloc(sizeof(int) * row);
     int sum = 0;
@@ -14,6 +16,9 @@ int *sum_row(int **arr, int row, int col) {
     return result;
 }
 
+/**
+ * Функцію створю транспоновану матрицю
+ */
 int **transpose(int **matrix, int row, int col) {
     int temp = row;
     row = col;
@@ -28,6 +33,9 @@ int **transpose(int **matrix, int row, int col) {
     return transposed;
 }
 
+/**
+ * Функція шукає максимальне значення з масиву та видає його місцеположення
+ */
 int search_max_arr(int *arr, int len) {
     int max = arr[0];
     int maxIndex = 0;
@@ -40,20 +48,3 @@ int search_max_arr(int *arr, int len) {
     return maxIndex + 1;
 }
 
-// int count_row(int **matrix) {
-//     int result = 0;
-//     for (int i = 0; matrix[i] != NULL; i++) {
-//         result++;
-//     }
-//     return result;
-// }
-//
-// int count_col(int **matrix[]) {
-//     int result = 0;
-//     for (int i = 0; matrix[i] != NULL; i++) {
-//         for (int j = 0; matrix[i][j] != NULL; j++) {
-//             result++;
-//         }
-//     }
-//     return result;
-// }

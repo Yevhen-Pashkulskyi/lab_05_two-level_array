@@ -8,7 +8,9 @@ void print_arr(int arr[], int row_len) {
     }
     printf("\n");
 }
-
+/**
+ * Функція роздруковує матрицю
+ */
 void print_matrix(int **arr, int rows, int cols) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
