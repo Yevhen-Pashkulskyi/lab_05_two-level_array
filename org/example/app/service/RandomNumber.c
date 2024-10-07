@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <time.h>
 /**
  * Функція створю рандомне ціле число
  */
