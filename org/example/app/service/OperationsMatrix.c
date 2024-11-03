@@ -19,7 +19,7 @@ int *sum_row(int **arr, int row, int col) {
 /**
  * Функцію створю транспоновану матрицю
  */
-int **transpose(int **matrix, int row, int col) {
+int *transpose(int **matrix, int row, int col) {
     int temp = row;
     row = col;
     col = temp;
