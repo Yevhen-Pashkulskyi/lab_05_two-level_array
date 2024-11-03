@@ -5,7 +5,7 @@
 /**
  * функція створю матрицю
  */
-int **matrix(int row, int colum, int min, int max) {
+int *matrix(int row, int colum, int min, int max) {
     int **arr = malloc(row * sizeof(int *));
     for (int i = 0; i < row; i++) {
         arr[i] = malloc(colum * sizeof(int));

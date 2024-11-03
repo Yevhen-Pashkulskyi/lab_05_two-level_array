@@ -9,9 +9,9 @@ void print_arr(int arr[], int row_len);
 
 void print_matrix(int **arr, int rows, int cols);
 
-int **matrix(int row, int colum, int min, int max);
+int *matrix(int row, int colum, int min, int max);
 
-int **transpose(int **matrix, int row, int col);
+int *transpose(int **matrix, int row, int col);
 
 int *sum_row(int **arr, int row, int col);
 
